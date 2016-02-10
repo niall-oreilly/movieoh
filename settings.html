@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MovieOh!</title>
-
+<link rel="stylesheet" href="niallsstyles.css" >
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
@@ -16,7 +16,7 @@
 
 <style type="text/css">
     .glyphicon {
-    font-size: 50px;
+    font-size: 32px;
   }
 
 ul.horizontal-slide {
@@ -36,104 +36,65 @@ ul.horizontal-slide li[class*="col"]:first-child {
     margin-left: 0;
 }
 
+#cont{
+  width:100%;
+  max-width:1100px;
+  margin:0 auto;
+}
 
+#sidebar img{
+  max-width:100%;
+  display:block;
+  margin:0 auto;
+}
   
+#sidebar h4, #sidebar h5{
+  text-align:center;
+}
+.right{
+  float:right;
+}
 
 </style>
 
-</head>
-<body>
-
+</head>"
+<body id="settings_page">
+<div id="cont">
 <div class="container">
 
-  <div class="row">
-    <div class="col-sm-1">
-        <img src="img/bad-logo.png">
-    </div>
-    <div class="col-sm-2 col-sm-offset-8">
-        <a href="index.html"><span class="glyphicon glyphicon-film"></span></a>
-        <a href="settings.html"><span class="glyphicon glyphicon-cog"></span></a>
-    </div>
+<div class="row">
+  <div class="col-md-2" id="sidebar">
+  <img src="img/bad-logo.png">
+  <img src="img/profile.png" alt="profile photo here" class="img-circle">
+  <h4>Name McName</h4>
+  <h5>Ireland</h5>
   </div>
-  <div class="row">
-    <div class="col-sm-1">
-      <img src="img/profile.png" alt="profile photo here" class="img-circle">
+  <div class="col-md-10" id="col2nd">
+   <div class="row">
+     <div class="right">
+          <a href="index.html"><i class="glyphicon glyphicon-film"></i></a>
+          <a href="settings.html"><i class="glyphicon glyphicon-cog"></i></a>
+     </div>
     </div>
-  </div>
+    <div class="row" id="ilove">
+      <h1><span class="glyphicon glyphicon-heart"></span> I Love</h1><i class="glyphicon glyphicon-plus-sign right"></i>
+      <input type="text" class="searchbox" placeholder="Add to list">
+      <ul class="horizontal-slide">
+        <li class="col-md-2"><img class="thumbnail" src="img/hateful8.jpg"/></li>
+        <li class="col-md-2"><img class="thumbnail" src="img/revenant.jpg"/></li>
+        <li class="col-md-2"><img class="thumbnail" src="img/exmachina.jpg"/></li>
+        <li class="col-md-2"><img class="thumbnail" src="img/blood.jpg"/></li>
+        <li class="col-md-2"><img class="thumbnail" src="img/galaxy.jpg"/></li>
+        <li class="col-md-2"><img class="thumbnail" src="img/nonstop.jpg"/></li>
+        <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+      </ul>
 
-  <hr>
-  
-  <div class="row">
-    <div class="col-md-6">
-            <div class="input-group" id="adv-search">
-                <input type="text" class="form-control" placeholder="Search for movies" />
-                <div class="input-group-btn">
-                    <div class="btn-group" role="group">
-                        <div class="dropdown dropdown-lg">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
-                            <div class="dropdown-menu dropdown-menu-right" role="menu">
-                                <form class="form-horizontal" role="form">
-                                  <div class="form-group">
-                                    <label for="filter">Filter by</label>
-                                    <select class="form-control">
-                                        <option value="0" selected>All Movies</option>
-                                        <option value="1">Featured</option>
-                                        <option value="2">Most popular</option>
-                                        <option value="3">Top rated</option>
-                                        <option value="4">Most commented</option>
-                                    </select>
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="contain">Movie</label>
-                                    <input class="form-control" type="text" />
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="contain">Contains the words</label>
-                                    <input class="form-control" type="text" />
-                                  </div>
-                                  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                                </form>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-  </div>
-
-<hr>
-
-  <div class="row">  
-      
-
-
-      <h1><span class="glyphicon glyphicon-heart"></span> I Love</h1>
-      <div class="container" style="background-color:#222;">
-        <div class="row">
-            <div class="col-md-12">
-              <ul class="horizontal-slide">
-                <li class="col-md-2"><img class="thumbnail" src="img/hateful8.jpg"/></li>
-                <li class="col-md-2"><img class="thumbnail" src="img/revenant.jpg"/></li>
-                <li class="col-md-2"><img class="thumbnail" src="img/exmachina.jpg"/></li>
-                <li class="col-md-2"><img class="thumbnail" src="img/blood.jpg"/></li>
-                <li class="col-md-2"><img class="thumbnail" src="img/galaxy.jpg"/></li>
-                <li class="col-md-2"><img class="thumbnail" src="img/nonstop.jpg"/></li>
-                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
-              </ul>
-          </div>
-        </div>
     </div>
-        
 
-  
-</div><!--container-->
-      <h1><span class="glyphicon glyphicon-thumbs-down"></span> I Hate</h1>
-      <div class="container" style="background-color:#222;">
-        <div class="row">
-            <div class="col-md-12">
-              <ul class="horizontal-slide">
+    <div class="row" id="ihate">
+      <h1><span class="glyphicon glyphicon-thumbs-down"></span> I Hate</h1><i class="glyphicon glyphicon-plus-sign right"></i>
+      <input type="text" class="searchbox" placeholder="Add to list">
+      <ul class="horizontal-slide">
                 <li class="col-md-2"><img class="thumbnail" src="img/barbie.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/ladyinvan.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/arrow.jpg"/></li>
@@ -141,16 +102,13 @@ ul.horizontal-slide li[class*="col"]:first-child {
                 <li class="col-md-2"><img class="thumbnail" src="img/darkweb.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/daysofg.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/daisy.jpg"/></li>
-              </ul>
-          </div>
-        </div>
-    </div>
-      <h1><span class="glyphicon glyphicon-eye-open"></span>  Recently Watched</h1>
+      </ul>
 
-      <div class="container" style="background-color:#222;">
-        <div class="row">
-            <div class="col-md-12">
-              <ul class="horizontal-slide">
+    </div>
+
+    <div class="row" id="recentlywatched">
+      <h1><span class="glyphicon glyphicon-eye-open"></span> Recently Watched</h1>
+      <ul class="horizontal-slide">
                 <li class="col-md-2"><img class="thumbnail" src="img/joy.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/swordfish.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/wedding.jpg"/></li>
@@ -158,23 +116,14 @@ ul.horizontal-slide li[class*="col"]:first-child {
                 <li class="col-md-2"><img class="thumbnail" src="img/trainwreck.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/bigshort.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/legend.jpg"/></li>
-              </ul>
-          </div>
-        </div>
-    </div>
-
-    <hr>
-
-      <h1><span class="glyphicon glyphicon-menu-hamburger"></span>  My Watchlist</h1>
-        
+      </ul>
 
     </div>
-  </div>
 
-  <div class="container" style="background-color:#222;">
-        <div class="row">
-            <div class="col-md-12">
-              <ul class="horizontal-slide">
+        <div class="row" id="recentlywatched">
+      <h1><span class="glyphicon glyphicon-menu-hamburger"></span> My Watchlist</h1><i class="glyphicon glyphicon-plus-sign right"></i>
+      <input type="text" class="searchbox" placeholder="Add to list">
+      <ul class="horizontal-slide">
                 <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/badeducation.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/dirty-grandpa.jpg"/></li>
@@ -182,21 +131,17 @@ ul.horizontal-slide li[class*="col"]:first-child {
                 <li class="col-md-2"><img class="thumbnail" src="img/inception.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/triple9.jpg"/></li>
                 <li class="col-md-2"><img class="thumbnail" src="img/wasco.jpg"/></li>
-              </ul>
-          </div>
-        </div>
+      </ul>
+
     </div>
 
-    <hr>
 
 
+  </div>      
+</div>  
 
+</div><!--/container-->
 
-
-</style>
-
-</head>
-<body>
 
 
 
