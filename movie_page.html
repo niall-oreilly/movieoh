@@ -17,16 +17,23 @@
 <style type="text/css">
 	.glyphicon {
     font-size: 50px;
-}
+	}
+	.glyphicon:hover {
+    transform: scale(1.2, 1.2);
+	}
 	.glyphicon-star-empty {
 		font-size: 30px;
 	}
 	.glyphicon-star {
 		font-size: 30px;
 	}
-
+	strong{
+		font-size: 25px;
+	}
+	button:hover{
+		transform: scale(1.2, 1.2);
+	}
 </style>
-
 </head>
 <body>
 
@@ -34,7 +41,7 @@
 
 	<div class="row">
 		<div class="col-sm-1">
-				<img src="img/bad-logo.png">
+				<img src="img/bad-logo.png" width="350px">
 		</div>
 		<!-- First row with buttons to come back to Index and Settings-->
 		<div class="col-sm-2 col-sm-offset-8">
@@ -45,11 +52,10 @@
   <!-- Second row with buttos to Love&Hate and Title-->
 	<div class="row">
 		<div class="col-sm-3">
-				<span class="glyphicon glyphicon-heart"></span>
-				<span class="glyphicon glyphicon-remove"></span>
-				<img src="..." alt="..." class="img-circle">
+				<span class="glyphicon glyphicon-heart" style="color:green"></span>
+				<span class="glyphicon glyphicon-remove" style="color:red"></span>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-5">
 		<h1> Deadpool (2016)</h1>
 		</div>
 	</div>
@@ -58,6 +64,7 @@
 		<div class="col-sm-8" id="trailer">
 			<!--<img class="img-responsive" src="img/trailer.jpg" border="10px">-->
 			<iframe width="740" height="400" src="https://www.youtube.com/embed/OcAlu4S-BvI" frameborder="0" allowfullscreen></iframe>
+			<font size="6"><br><p>Congratulations! You can watch this movie Now!</p></font>
 			<!--
 			<div class="progress">
  				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
@@ -78,35 +85,39 @@
 	<div class="row">
 		<div class="col-sm-2">
 			<button type="button" class="btn btn-danger btn-sm">
-			  <strong>$0.99</strong><img class="img-responsive" src="http://www.bitterwallet.com/wp-content/uploads/2014/04/netflix-transparent.png" width="150px">
+			  <strong>$2.00</strong><img class="img-responsive" src="http://www.bitterwallet.com/wp-content/uploads/2014/04/netflix-transparent.png" width="150px">
 			</button>
 		</div>
 		<div class="col-sm-2">
 			<button type="button" class="btn btn-danger btn-sm">
-			  <strong>$1.99</strong></span>  <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/223408/screenshots/984648/google_play_logo_002_002.png" width="150px">
+			  <strong>$1.99</strong></span>  <img class="img-responsive" src="http://4.bp.blogspot.com/-DV3oSkBGKVw/VWdWwTZ0DSI/AAAAAAAABrs/KizNkOcUhGw/s1600/Google%2BPlay%2Blogo.png" width="150px">
 			</button>
 		</div>
 		<div class="col-sm-2">
 			<button type="button" class="btn btn-danger btn-sm">
-			  <strong>$2.00</strong></span>  <img class="img-responsive" src="https://lh3.ggpht.com/kOJmm-GVhAVJ50A_gY59EmaOvlwoseWFWgNmr75ufVVLZSlpBdV2jWqHPiiBfzOO6bTY=w300" width="150px">
+			  <strong>$0.99</strong></span>  <img class="img-responsive" src="https://lh3.ggpht.com/kOJmm-GVhAVJ50A_gY59EmaOvlwoseWFWgNmr75ufVVLZSlpBdV2jWqHPiiBfzOO6bTY=w300" width="150px">
 			</button>
 		</div>
 		<div class="col-sm-2">
 			<button type="button" class="btn btn-primary btn-sm">
-			  <strong>Free! </strong><img class="img-responsive" src="http://advanced-television.com/wp-content/uploads/2014/02/prime-instant-video.png" width="150px">
+			  <strong>Free! </strong><img class="img-responsive" src="https://lh6.ggpht.com/2c8BQojorDvdhl-Vgn8H_KzKwV3-SW4mMtaOxsTY2zmLwAayGqDEfo-nTkCFJVWbXNU=w300" width="150px">
 			</button>
 		</div>
 
 <div class="col-sm-4">
 	<div class="list-group">
   	<a href="#" class="list-group-item active">What people are saying?</a>
-  	<a href="#" class="list-group-item">IMDB <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></a>
-  	<a href="#" class="list-group-item">Rotten Tomatoes <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></a>
-  	<a href="#" class="list-group-item">Metascore <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></a>
+		<font size="4">
+  	<a href="http://www.imdb.com/title/tt1431045/reviews?ref_=tt_ov_rt" class="list-group-item">IMDB <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></a>
+
+  	<a href="http://www.rottentomatoes.com/m/deadpool/#contentReviews" class="list-group-item">Rotten Tomatoes <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></a>
+
+  	<a href="http://www.metacritic.com/movie/deadpool/critic-reviews" class="list-group-item">Metascore <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></a>
+
   	<a href="#" class="list-group-item">movieOh! <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></a>
+
 	</div>
 </div>
-
 
 </div>
 
@@ -115,8 +126,6 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-
 </body>
 </html>
 
