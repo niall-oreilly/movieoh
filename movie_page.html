@@ -84,7 +84,10 @@
   <!-- Third row with Movie trailer and movie details-->
 	<div class="row">
 		<div class="col-sm-8" id="trailer">
-			<iframe width="740" height="400" src="https://www.youtube.com/embed/OcAlu4S-BvI" frameborder="0" allowfullscreen></iframe>
+			<!-- 16:9 aspect ratio -->
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OcAlu4S-BvI"></iframe>
+			</div>
 			<font size="6"><br><p>Excellent! You can watch this movie <font color="#0ce3ac">Now!</font></p></font>
 		</div>
 		<div class="col-sm-4">
@@ -158,4 +161,3 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
-
