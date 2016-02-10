@@ -5,18 +5,8 @@
    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MovieOh!</title>
-	<img src="img/bad-logo.png">
-<div class="row header">
-    <div class="col-xs-12 text-center">
-      
-      <h1>I Love	<span class="glyphicon glyphicon-heart"></span></h1>
-      <h1>I Hate	<span class="glyphicon glyphicon-thumbs-down"></span></h1>
-      <h1>Recently Watched	<span class="glyphicon glyphicon-eye-open"></span></h1>
-      <h1>My Watchlist	<span class="glyphicon glyphicon-align-justify"></span></h1>
+    <title>MovieOh!</title>
 
-    </div>
-  </div>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
@@ -24,92 +14,189 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-
-<div class="well">
-
-<div id="myCarousel" class="carousel slide">
-
-<ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-</ol>
-
-<!-- Carousel items -->
-<div class="carousel-inner">
-
-<div class="item active">
-    <div class="row-fluid">
-      <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-      <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-      <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-      <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-    </div><!--/row-fluid-->
-</div><!--/item-->
-
-<div class="item">
-    <div class="row-fluid">
-        <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-        <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-        <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-        <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-    </div><!--/row-fluid-->
-</div><!--/item-->
-
-<div class="item">
-    <div class="row-fluid">
-        <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-        <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-        <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-        <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-    </div><!--/row-fluid-->
-</div><!--/item-->
-
-</div><!--/carousel-inner-->
-
-<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-</div><!--/myCarousel-->
-
-</div><!--/well-->
-
-<!-- This is just a little bit of custom CSS code to enhance things. Feel free to place this in your main CSS file. I've commented to say what each bit does. --> 
 <style type="text/css">
-/* Removes the default 20px margin and creates some padding space for the indicators and controls */
-.carousel {
-    margin-bottom: 0;
-    padding: 0 40px 30px 40px;
+    .glyphicon {
+    font-size: 50px;
+  }
+
+ul.horizontal-slide {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
 }
-/* Reposition the controls slightly */
-.carousel-control {
-    left: -12px;
+
+ul.horizontal-slide li[class*="col"] {
+    display: inline-block;
+    float: none;
 }
-.carousel-control.right {
-    right: -12px;
+
+ul.horizontal-slide li[class*="col"]:first-child {
+    margin-left: 0;
 }
-/* Changes the position of the indicators */
-.carousel-indicators {
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    margin-right: -19px;
-}
-/* Changes the colour of the indicators */
-.carousel-indicators li {
-    background: #c0c0c0;
-}
-.carousel-indicators .active {
-background: #333333;
-}
+
+  
+
 </style>
-
-<!-- Call jQuery 1.9, call bootstrap.js and run the carousel when the DOM is ready. Slide every 10 seconds. -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 
 </head>
 <body>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-1">
+        <img src="img/bad-logo.png">
+    </div>
+    <div class="col-sm-2 col-sm-offset-8">
+        <a href="index.html"><span class="glyphicon glyphicon-film"></span></a>
+        <a href="settings.html"><span class="glyphicon glyphicon-cog"></span></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1">
+      <img src="img/profile.png" alt="profile photo here" class="img-circle">
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="row">
+    <div class="col-md-6">
+            <div class="input-group" id="adv-search">
+                <input type="text" class="form-control" placeholder="Search for movies" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form class="form-horizontal" role="form">
+                                  <div class="form-group">
+                                    <label for="filter">Filter by</label>
+                                    <select class="form-control">
+                                        <option value="0" selected>All Movies</option>
+                                        <option value="1">Featured</option>
+                                        <option value="2">Most popular</option>
+                                        <option value="3">Top rated</option>
+                                        <option value="4">Most commented</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Movie</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Contains the words</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                                  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+<hr>
+
+  <div class="row">  
+      
+
+
+      <h1>I Love<span class="glyphicon glyphicon-heart"></span></h1>
+      <div class="container" style="background-color:black;">
+        <div class="row">
+            <div class="col-md-12">
+              <ul class="horizontal-slide">
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+              </ul>
+          </div>
+        </div>
+    </div>
+        
+
+  
+</div><!--container-->
+      <h1><span class="glyphicon glyphicon-thumbs-down"></span> I Hate</h1>
+      <div class="container" style="background-color:black;">
+        <div class="row">
+            <div class="col-md-12">
+              <ul class="horizontal-slide">
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+              </ul>
+          </div>
+        </div>
+    </div>
+      <h1>Recently Watched<span class="glyphicon glyphicon-eye-open"></span></h1>
+
+      <div class="container" style="background-color:black;">
+        <div class="row">
+            <div class="col-md-12">
+              <ul class="horizontal-slide">
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+              </ul>
+          </div>
+        </div>
+    </div>
+
+    <hr>
+
+      <h1>My Watchlist<span class="glyphicon glyphicon-menu-hamburger"></span></h1>
+        
+
+    </div>
+  </div>
+
+  <div class="container" style="background-color:black;">
+        <div class="row">
+            <div class="col-md-12">
+              <ul class="horizontal-slide">
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+                <li class="col-md-2"><img class="thumbnail" src="img/movie.jpg"/></li>
+              </ul>
+          </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
 
 
 
