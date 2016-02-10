@@ -216,3 +216,7 @@ input.searchbox{
 	font-size:50px;
 	color:gray;
 }
+
+body{
+	padding-top:5px;
+}
