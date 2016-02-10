@@ -17,6 +17,7 @@
 <style type="text/css">
 	.glyphicon {
     font-size: 50px;
+    transition:transform 0.2s ease-out, color 0.3s ease-out;
 	}
 	.glyphicon:hover {
     transform: scale(1.2, 1.2);
@@ -27,11 +28,15 @@
 	.glyphicon-star {
 		font-size: 20px;
 	}
+	.glyphicon-cog:hover{
+		transform: rotate(45deg) scale(1.2, 1.2);
+	}
 	strong{
 		font-size: 25px;
 	}
 	button:hover{
 		transform: scale(1.2, 1.2);
+		transition:transform 0.1s ease-out, color 0.3s ease-out;
 	}
 	#footer{
 		border-style: solid;
